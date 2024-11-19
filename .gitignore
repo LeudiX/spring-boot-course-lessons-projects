@@ -199,3 +199,8 @@ README.html
 *.iml
 .idea
 .exercism
+
+#Temporary folder lessons
+leccion2/
+leccion3/
+leccion4/
