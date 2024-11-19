@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Saludo</title>
+    <meta http-equiv="Content-Type" content="text/html; charset-UTF-8/">
+</head>
+
+<body style="font-weight: bold;font-family: monospace;">
+    <h1 style="color: green; text-align: center;">Welcome to Spring Boot Course!</h1>
+    <div style="padding: 1vh;text-align: center;">
+        <div th:if="${nombre == 'Mundo'}">
+            <h1><span>🌍</span></h1>`   
+        </div>
+        <div th:unless="${nombre=='Mundo'}">
+            <h1><span>😊</span></h1>
+        </div>
+
+        <h1 style="color: crimson;"><span th:text="Hola + ' ' + ${nombre}"></span></h1>
+        <p style="color: darkgoldenrod;font-size: larger;">Type: <span style="color: darkorange;">/saludar?nombre=<span style="color:dodgerblue">yourname</span></span> in the url to see the results</p>
+    </div>
+</body>
+
+</html>
